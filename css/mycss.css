@@ -1,0 +1,23 @@
+a {
+    text-decoration:none;
+}
+
+.card-post > .mdl-card__actions {
+    display: flex;
+    box-sizing:border-box;
+    align-items: center;
+    padding: 50px;
+}
+
+.mdl-grid {
+    justify-content: center;
+}
+
+.mdl-grid-align {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.mdl-card {
+    max-width: 383px;
+}
