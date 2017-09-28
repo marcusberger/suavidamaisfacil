@@ -8,7 +8,7 @@ a label {
 
 .mdl-cell {
     margin-bottom: 20px;
-    margin-top: 20px;
+    margin-top: 5px;
 }
 
 /* Alinhamento dos grids justificado */
@@ -35,7 +35,7 @@ a label {
 .texto-card {
     margin-top: 0;
     margin-bottom: 0;
-    font-size: 12px;
+    font-size: 14px;
 }
 
 .mdl-card__supporting-text {
@@ -47,8 +47,27 @@ a label {
     background-color: #eceff1;
     padding: 10px;
     margin:0 auto;
+    padding-top: 15px;
+    padding-bottom: 15px;
 }
 
 .logo-container {
     margin:0 auto;
+}
+
+.formulario-cadastro {
+    margin-bottom: 30px;
+}
+
+.button-footer {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.mdl-mini-footer {
+    background-color: #90a4ae;
+}
+
+.mdl-navigation__link {
+    font-size: 18px;
 }
