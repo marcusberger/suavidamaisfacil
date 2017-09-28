@@ -18,13 +18,14 @@ a label {
 }
 
 /* O Card é limitado no tamanho máximo das Tamanho máximo das fotos */
-.mdl-card {
+.mdl-card-home {
     max-width: 383px;
 }
 
-.demo-card-square.mdl-card {
-    width: 320px;
-    height: 320px;
+.mdl-card-wide {
+    max-width: 1000px;
+    margin-top: 10px;
+    margin-bottom: 20px;
 }
 
 .titulo-card {
@@ -51,6 +52,15 @@ a label {
     padding-bottom: 15px;
 }
 
+.card-painel-post {
+    padding: 10px;
+    margin:0 auto;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    color: black;
+}
+
+
 .logo-container {
     margin:0 auto;
 }
@@ -70,4 +80,31 @@ a label {
 
 .mdl-navigation__link {
     font-size: 18px;
+}
+
+.facebook-div-comentario {
+    max-width: 630px;
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+.facebook-comentario {
+    margin-top: 30px;
+}
+
+.button-footer {
+    margin-left: 15px;
+}
+
+.center-crop-image {
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.mdl-card__media {
+    background-color: white;
+}
+
+.fb-like-post {
+    margin-bottom: 15px;
 }
