@@ -1,23 +1,54 @@
-a {
+
+
+/* Muda o cursor sobre os cards e */
+a label {
+    cursor: pointer;
     text-decoration:none;
 }
 
-.card-post > .mdl-card__actions {
-    display: flex;
-    box-sizing:border-box;
-    align-items: center;
-    padding: 50px;
+.mdl-cell {
+    margin-bottom: 20px;
+    margin-top: 20px;
 }
 
-.mdl-grid {
-    justify-content: center;
-}
-
+/* Alinhamento dos grids justificado */
 .mdl-grid-align {
     width: 100%;
     margin: 0 auto;
 }
 
+/* O Card é limitado no tamanho máximo das Tamanho máximo das fotos */
 .mdl-card {
     max-width: 383px;
+}
+
+.demo-card-square.mdl-card {
+    width: 320px;
+    height: 320px;
+}
+
+.titulo-card {
+    margin-top: 5px;
+    margin-bottom: 0;
+}
+
+.texto-card {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 12px;
+}
+
+.mdl-card__supporting-text {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.card-painel {
+    background-color: #eceff1;
+    padding: 10px;
+    margin:0 auto;
+}
+
+.logo-container {
+    margin:0 auto;
 }

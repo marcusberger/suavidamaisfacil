@@ -5,22 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sua vida mais fácil</title>
 
-    <!-- Material design -->
-    <link rel="stylesheet" href="mdl/material.min.css">
-    <link rel="stylesheet" href="css/mycss.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" />
+    <link rel="stylesheet" href="css/material.min.css" />
+    <link rel="stylesheet" href="css/mycss.css">
+    <link rel="stylesheet" href="css/modal.css">
+
+    <script src="jquery/jquery.js"></script>
     <script src="mdl/material.min.js"></script>
+    <script src="js/index.js"></script>
 
 </head>
 
 <body>
+
     <!-- App bar superior -->
     <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
-        <header class="mdl-layout__header">
-            <div class="mdl-layout__header-row">
-                <!-- Vai ter título??? -->
-                <span class="mdl-layout-title"></span>
-                <!-- Add spacer, to align navigation to the right -->
+        <header class="mdl-layout__header header-color">
+            <div class="mdl-layout__header-row header-color">
+                <!-- Espaço pra empurrar os links p/ a direita -->
                 <div class="mdl-layout-spacer"></div>
                 <!-- Itens do menu superior, para telas maiores -->
                 <nav class="mdl-navigation mdl-layout--large-screen-only">
@@ -30,9 +34,11 @@
                     <a class="mdl-navigation__link" href="">Sua vida</a>
                 </nav>
             </div>
+
         </header>
-        <!-- Menu hamburger -->
-        <div class="mdl-layout__drawer">
+
+         <!--Menu hamburger-->
+        <div class="mdl-layout__drawer hamburger-menu">
             <span class="mdl-layout-title">Menu</span>
             <nav class="mdl-navigation">
                 <a class="mdl-navigation__link" href="">Auto</a>
@@ -46,26 +52,38 @@
         <main class="mdl-layout__content">
             <div class="page-content">
 
-                <!-- Conteiner dos grids -->
+                <!-- Logo e nome-->
+                <div align="center">
+                    <div class="card-painel" >
+                        <img src="img/fav-icon.png" width="45" height="43" border="0"
+                             alt="" >
+                        <img class="nome-logo" src="img/nome.png" width="225" height="25" border="0"
+                             alt="" style="margin-left: 10px">
+                    </div>
+                </div>
+                <!-- Container dos grids -->
                 <div class="mdl-grid">
-
                     <!-- Célula de grid da postagem #9 -->
                     <div class="mdl-cell mdl-cell--4-col">
-                        <!-- Card da postagem #6 -->
+                        <!-- Card da postagem #5 -->
                         <div class="mdl-card mdl-shadow--4dp mdl-grid-align">
                             <a href="index.html">
                                 <div class="mdl-card__media">
-                                    <img src="img/3-apps-que-vao-mudar-a-sua-vida.jpeg" width="383" height="257" border="0"
+                                    <img src="img/3-apps-que-vao-mudar-a-sua-vida.jpeg" width="383" height="200" border="0"
                                          alt="" >
                                 </div>
-
                                 <div class="mdl-card__supporting-text">
-                                    <h4 data-toggle="collapse" data-target="#post1">3 Apps que vão mudar a sua vida!</h4>
+                                    <h5 class="titulo-card" data-toggle="collapse" data-target="#post1">3 Apps que vão mudar a sua vida!</h5>
                                 </div>
                                 <div class="mdl-card__supporting-text">
-                                    <p id="post-body" >Chega de tentar fingir que o celular não é uma extensão do nosso corpo.
+                                    <p class="texto-card" id="post-body" >Chega de tentar fingir que o celular não é uma extensão do nosso corpo.
                                         Ao invés de lutar contra isso é hora de aproveitar o que eles...
                                     </p>
+                                </div>
+                                <div class="mdl-card__actions mdl-card--border">
+                                    <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+                                        Saiba mais
+                                    </a>
                                 </div>
                             </a>
                         </div>
@@ -77,17 +95,22 @@
                         <div class="mdl-card mdl-shadow--4dp mdl-grid-align">
                             <a href="index.html">
                                 <div class="mdl-card__media">
-                                    <img src="img/3-apps-que-vao-mudar-a-sua-vida.jpeg" width="383" height="257" border="0"
+                                    <img src="img/3-apps-que-vao-mudar-a-sua-vida.jpeg" width="383" height="200" border="0"
                                          alt="" >
                                 </div>
 
                                 <div class="mdl-card__supporting-text">
-                                    <h4 data-toggle="collapse" data-target="#post1">3 Apps que vão mudar a sua vida!</h4>
+                                    <h5 class="titulo-card" data-toggle="collapse" data-target="#post1">3 Apps que vão mudar a sua vida!</h5>
                                 </div>
                                 <div class="mdl-card__supporting-text">
-                                    <p id="post-body" >Chega de tentar fingir que o celular não é uma extensão do nosso corpo.
+                                    <p class="texto-card" id="post-body" >Chega de tentar fingir que o celular não é uma extensão do nosso corpo.
                                         Ao invés de lutar contra isso é hora de aproveitar o que eles...
                                     </p>
+                                </div>
+                                <div class="mdl-card__actions mdl-card--border">
+                                    <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+                                        Saiba mais
+                                    </a>
                                 </div>
                             </a>
                         </div>
@@ -99,17 +122,22 @@
                         <div class="mdl-card mdl-shadow--4dp mdl-grid-align">
                             <a href="index.html">
                                 <div class="mdl-card__media">
-                                    <img src="img/3-apps-que-vao-mudar-a-sua-vida.jpeg" width="383" height="257" border="0"
+                                    <img src="img/3-apps-que-vao-mudar-a-sua-vida.jpeg" width="383" height="200" border="0"
                                          alt="" >
                                 </div>
 
                                 <div class="mdl-card__supporting-text">
-                                    <h4 data-toggle="collapse" data-target="#post1">3 Apps que vão mudar a sua vida!</h4>
+                                    <h5 class="titulo-card" data-toggle="collapse" data-target="#post1">3 Apps que vão mudar a sua vida!</h5>
                                 </div>
                                 <div class="mdl-card__supporting-text">
-                                    <p id="post-body" >Chega de tentar fingir que o celular não é uma extensão do nosso corpo.
+                                    <p class="texto-card" id="post-body" >Chega de tentar fingir que o celular não é uma extensão do nosso corpo.
                                         Ao invés de lutar contra isso é hora de aproveitar o que eles...
                                     </p>
+                                </div>
+                                <div class="mdl-card__actions mdl-card--border">
+                                    <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+                                        Saiba mais
+                                    </a>
                                 </div>
                             </a>
                         </div>
@@ -121,17 +149,22 @@
                         <div class="mdl-card mdl-shadow--4dp mdl-grid-align">
                             <a href="index.html">
                                 <div class="mdl-card__media">
-                                    <img src="img/3-apps-que-vao-mudar-a-sua-vida.jpeg" width="383" height="257" border="0"
+                                    <img src="img/3-apps-que-vao-mudar-a-sua-vida.jpeg" width="383" height="200" border="0"
                                          alt="" >
                                 </div>
 
                                 <div class="mdl-card__supporting-text">
-                                    <h4 data-toggle="collapse" data-target="#post1">3 Apps que vão mudar a sua vida!</h4>
+                                    <h5 class="titulo-card" data-toggle="collapse" data-target="#post1">3 Apps que vão mudar a sua vida!</h5>
                                 </div>
                                 <div class="mdl-card__supporting-text">
-                                    <p id="post-body" >Chega de tentar fingir que o celular não é uma extensão do nosso corpo.
+                                    <p class="texto-card" id="post-body" >Chega de tentar fingir que o celular não é uma extensão do nosso corpo.
                                         Ao invés de lutar contra isso é hora de aproveitar o que eles...
                                     </p>
+                                </div>
+                                <div class="mdl-card__actions mdl-card--border">
+                                    <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+                                        Saiba mais
+                                    </a>
                                 </div>
                             </a>
                         </div>
@@ -143,17 +176,22 @@
                         <div class="mdl-card mdl-shadow--4dp mdl-grid-align">
                             <a href="index.html">
                                 <div class="mdl-card__media">
-                                    <img src="img/3-apps-que-vao-mudar-a-sua-vida.jpeg" width="383" height="257" border="0"
+                                    <img src="img/3-apps-que-vao-mudar-a-sua-vida.jpeg" width="383" height="200" border="0"
                                          alt="" >
                                 </div>
 
                                 <div class="mdl-card__supporting-text">
-                                    <h4 data-toggle="collapse" data-target="#post1">3 Apps que vão mudar a sua vida!</h4>
+                                    <h5 class="titulo-card" data-toggle="collapse" data-target="#post1">3 Apps que vão mudar a sua vida!</h5>
                                 </div>
                                 <div class="mdl-card__supporting-text">
-                                    <p id="post-body" >Chega de tentar fingir que o celular não é uma extensão do nosso corpo.
+                                    <p class="texto-card" id="post-body" >Chega de tentar fingir que o celular não é uma extensão do nosso corpo.
                                         Ao invés de lutar contra isso é hora de aproveitar o que eles...
                                     </p>
+                                </div>
+                                <div class="mdl-card__actions mdl-card--border">
+                                    <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+                                        Saiba mais
+                                    </a>
                                 </div>
                             </a>
                         </div>
@@ -165,17 +203,22 @@
                         <div class="mdl-card mdl-shadow--4dp mdl-grid-align">
                             <a href="index.html">
                                 <div class="mdl-card__media">
-                                    <img src="img/3-apps-que-vao-mudar-a-sua-vida.jpeg" width="383" height="257" border="0"
+                                    <img src="img/3-apps-que-vao-mudar-a-sua-vida.jpeg" width="383" height="200" border="0"
                                          alt="" >
                                 </div>
 
                                 <div class="mdl-card__supporting-text">
-                                    <h4 data-toggle="collapse" data-target="#post1">3 Apps que vão mudar a sua vida!</h4>
+                                    <h5 class="titulo-card" data-toggle="collapse" data-target="#post1">3 Apps que vão mudar a sua vida!</h5>
                                 </div>
                                 <div class="mdl-card__supporting-text">
-                                    <p id="post-body" >Chega de tentar fingir que o celular não é uma extensão do nosso corpo.
+                                    <p class="texto-card" id="post-body" >Chega de tentar fingir que o celular não é uma extensão do nosso corpo.
                                         Ao invés de lutar contra isso é hora de aproveitar o que eles...
                                     </p>
+                                </div>
+                                <div class="mdl-card__actions mdl-card--border">
+                                    <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+                                        Saiba mais
+                                    </a>
                                 </div>
                             </a>
                         </div>
@@ -187,17 +230,22 @@
                         <div class="mdl-card mdl-shadow--4dp mdl-grid-align">
                             <a href="index.html">
                                 <div class="mdl-card__media">
-                                    <img src="img/3-apps-que-vao-mudar-a-sua-vida.jpeg" width="383" height="257" border="0"
+                                    <img src="img/3-apps-que-vao-mudar-a-sua-vida.jpeg" width="383" height="200" border="0"
                                          alt="" >
                                 </div>
 
                                 <div class="mdl-card__supporting-text">
-                                    <h4 data-toggle="collapse" data-target="#post1">3 Apps que vão mudar a sua vida!</h4>
+                                    <h5 class="titulo-card" data-toggle="collapse" data-target="#post1">3 Apps que vão mudar a sua vida!</h5>
                                 </div>
                                 <div class="mdl-card__supporting-text">
-                                    <p id="post-body" >Chega de tentar fingir que o celular não é uma extensão do nosso corpo.
+                                    <p class="texto-card" id="post-body" >Chega de tentar fingir que o celular não é uma extensão do nosso corpo.
                                         Ao invés de lutar contra isso é hora de aproveitar o que eles...
                                     </p>
+                                </div>
+                                <div class="mdl-card__actions mdl-card--border">
+                                    <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+                                        Saiba mais
+                                    </a>
                                 </div>
                             </a>
                         </div>
@@ -209,17 +257,22 @@
                         <div class="mdl-card mdl-shadow--4dp mdl-grid-align">
                             <a href="index.html">
                                 <div class="mdl-card__media">
-                                    <img src="img/3-apps-que-vao-mudar-a-sua-vida.jpeg" width="383" height="257" border="0"
+                                    <img src="img/3-apps-que-vao-mudar-a-sua-vida.jpeg" width="383" height="200" border="0"
                                          alt="" >
                                 </div>
 
                                 <div class="mdl-card__supporting-text">
-                                    <h4 data-toggle="collapse" data-target="#post1">3 Apps que vão mudar a sua vida!</h4>
+                                    <h5 class="titulo-card"  data-toggle="collapse" data-target="#post1">3 Apps que vão mudar a sua vida!</h5>
                                 </div>
                                 <div class="mdl-card__supporting-text">
-                                    <p id="post-body" >Chega de tentar fingir que o celular não é uma extensão do nosso corpo.
+                                    <p class="texto-card" id="post-body" >Chega de tentar fingir que o celular não é uma extensão do nosso corpo.
                                         Ao invés de lutar contra isso é hora de aproveitar o que eles...
                                     </p>
+                                </div>
+                                <div class="mdl-card__actions mdl-card--border">
+                                    <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+                                        Saiba mais
+                                    </a>
                                 </div>
                             </a>
                         </div>
@@ -231,21 +284,27 @@
                         <div class="mdl-card mdl-shadow--4dp mdl-grid-align">
                             <a href="index.html">
                                 <div class="mdl-card__media">
-                                    <img src="img/3-apps-que-vao-mudar-a-sua-vida.jpeg" width="383" height="257" border="0"
+                                    <img src="img/3-apps-que-vao-mudar-a-sua-vida.jpeg" width="383" height="200" border="0"
                                          alt="" >
                                 </div>
 
-                                <div class="mdl-card__supporting-text">
-                                    <h4 data-toggle="collapse" data-target="#post1">3 Apps que vão mudar a sua vida!</h4>
+                                <div class="mdl-card__supporting-text ">
+                                    <h5 class="titulo-card" data-toggle="collapse" data-target="#post1">3 Apps que vão mudar a sua vida!</h5>
                                 </div>
                                 <div class="mdl-card__supporting-text">
-                                    <p id="post-body" >Chega de tentar fingir que o celular não é uma extensão do nosso corpo.
+                                    <p class="texto-card" id="post-body" >Chega de tentar fingir que o celular não é uma extensão do nosso corpo.
                                         Ao invés de lutar contra isso é hora de aproveitar o que eles...
                                     </p>
+                                </div>
+                                <div class="mdl-card__actions mdl-card--border">
+                                    <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+                                        Saiba mais
+                                    </a>
                                 </div>
                             </a>
                         </div>
                     </div>
+
                     <!-- Final das postagens -->
                 </div>
                 <!-- Final do grid -->
@@ -255,11 +314,14 @@
                     <div class="mdl-mini-footer__left-section">
                         <div class="mdl-logo">Sua vida mais fácil</div>
                         <ul class="mdl-mini-footer__link-list">
-                            <li><a href="#">Ajuda</a></li>
-                            <li><a href="#">Contato</a></li>
-                            <li><a href="#">Termos e condições</a></li>
+                            <li><a href="https://www.facebook.com/suavidamaisfacil"> <img src="img/facebook.svg" width="30" height="30" border="0" target="_blank" alt="" ></a></li>
+                            <li><a href="#"> <img src="img/twitter.svg" width="30" height="30" border="0" alt="" ></a></li>
+
                         </ul>
+                        <div class="mdl-layout-spacer"></div>
+
                     </div>
+                </footer>
                 </footer>
 
             </div>
