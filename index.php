@@ -414,6 +414,9 @@
                             <button id="button-download" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent button-footer">
                                 Quero meu e-book grátis
                             </button>
+                            <div class="form-group">
+                                <p class="pMensagemPrivacidade">Seus dados são confidenciais e estarão seguros conosco.<p>
+                            </div>
                             <!--hidden para inclusão no banco-->
                             <input type="hidden" id="nome-db" name="nome-db">
                             <input type="hidden" id="email-db" name="email-db">

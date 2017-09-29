@@ -18,7 +18,7 @@ $email = $_POST["email-db"];
 
  //$strcon = mysqli_connect('localhost', 'root', '', 'gamaleads') or die('Erro ao conectar ao banco de dados');
  $strcon = mysqli_connect ('us-cdbr-iron-east-05.cleardb.net', 'b23b58fbf6bfbb', '46af30d5', 'heroku_ed7ae2b5f9d0b07') or die('Erro ao conectar ao banco de dados');
- $sql = "INSERT INTO leads_teste VALUES ";
+ $sql = "INSERT INTO leads VALUES ";
  $sql .= "('$id_leads','$ip', '$data', '$hora', '$nome', '$email')";
  echo $sql;
  mysqli_query($strcon,$sql) or die("Erro ao tentar cadastrar registro");
