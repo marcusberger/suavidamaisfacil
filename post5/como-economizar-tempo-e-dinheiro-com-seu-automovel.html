@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="pt-br" xmlns:color="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="3 apps que vão mudar a sua vida para melhor">
+    <title>Sua vida mais fácil</title>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="shortcut icon" type="image/png" href="../img/favicon-32x32.png" sizes="32x32" />
+    <link rel="shortcut icon" type="image/png" href="../img/favicon-16x16.png" sizes="16x16" />
+    <link rel="stylesheet" href="../css/material.min.css" />
+    <link rel="stylesheet" href="../css/mycss.css">
+    <link rel="stylesheet" href="../css/modal.css">
+
+    <script src="../jquery/jquery.js"></script>
+    <script src="../mdl/material.min.js"></script>
+    <script src="../js/validacao.js"></script>
+
+    <!-- facebook commentários-->
+    <script>(function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = "//connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v2.10&appId=245558825499694";
+        fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+
+    <!-- facebook -->
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = "//connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v2.10";
+        fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+
+    <!--Analytics-->
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-106963166-1', 'auto');
+        ga('send', 'pageview');
+
+    </script>
+
+</head>
+
+<body>
+
+    <!-- App bar superior -->
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+        <header class="mdl-layout__header header-color">
+            <div class="mdl-layout__header-row header-color">
+                <!-- Espaço pra empurrar os links p/ a direita -->
+                <div class="mdl-layout-spacer"></div>
+                <!-- Itens do menu superior, para telas maiores -->
+                <nav class="mdl-navigation mdl-layout--large-screen-only">
+                    <a class="mdl-navigation__link" href="">Auto</a>
+                    <a class="mdl-navigation__link" href="">Pet</a>
+                    <a class="mdl-navigation__link" href="">Gadget</a>
+                    <a class="mdl-navigation__link" href="">Sua vida</a>
+                </nav>
+            </div>
+
+        </header>
+
+         <!--Menu hamburger-->
+        <div class="mdl-layout__drawer hamburger-menu">
+            <span class="mdl-layout-title">Menu</span>
+            <nav class="mdl-navigation ">
+                <a class="mdl-navigation__link" href="">Auto</a>
+                <a class="mdl-navigation__link" href="">Pet</a>
+                <a class="mdl-navigation__link" href="">Gadget</a>
+                <a class="mdl-navigation__link" href="">Sua vida</a>
+            </nav>
+        </div>
+
+        <!-- Container do layout -->
+        <main class="mdl-layout__content">
+            <div class="page-content">
+
+                <!-- Logo e nome-->
+                <div align="center">
+                    <div class="card-painel" >
+                        <a href="../index.html">
+                            <img src="../img/fav-icon.png" width="45" height="43" border="0"
+                                 alt="" >
+                            <img class="nome-logo" src="../img/nome.png" width="215" height="25" border="0"
+                                 alt="" style="margin-left: 10px">
+                        </a>
+                    </div>
+                </div>
+                <!-- Container dos grids -->
+                <div class="mdl-grid">
+                    <!-- Célula de grid da postagem -->
+                    <div class="mdl-cell mdl-cell--12-col ">
+
+                        <!-- Card da postagem -->
+                        <div align="center">
+                            <div class="mdl-card mdl-card-wide mdl-shadow--4dp mdl-grid-align">
+                                <div class="mdl-card__media center-crop-image">
+                                    <img src="../img/como-economizar-tempo-e-dinheiro-com-seu-automovel.jpeg" style='height: 100%; width: 100%; object-fit: contain' border="0"
+                                         alt="" >
+                                </div>
+                                <div class="mdl-card__supporting-text" align="left" style="color: #212121">
+                                    <h4 class="titulo-card" data-toggle="collapse" data-target="#post1" >Os 5 melhores aplicativos para gestão de gastos do seu carro!</h4>
+                                </div>
+                                <div class="mdl-card__supporting-text" align="left">
+                                    <p id="post-body" >
+                                        Os tempos estão mudando e muita coisa que antes era fato, hoje não passa de uma simples lembrança, isso é um fato!
+                                        Mas uma coisa que sem dúvida ainda é verdade, é que o brasileiro não deixou de ser apaixonado por carro!
+                                        Segundo o IBGE cada família tem em média quase dois carros e mesmo com essa cultura do compartilhamento de veículos
+                                        que vem surgindo, esse número não tente a cair tão cedo.
+                                        <br>
+                                        <br>
+                                        Ao mesmo tempo que a maioria de nós não quer abandonar o seu querido carro, os custos para mantê-lo só aumentam.
+                                        Uma pesquisa do ESTADÃO mostrou que em média o brasileiro gasta por ano 40% do valor do veículo com manutenção e despesas.
+                                        Numa conta rápida, um carro que custa R$30.000,00 vai trazer aproximadamente R$16.000,00 de despensas para o seu dono.
+                                        Eu sei que é difícil acreditar, mas coloque na ponta do lápis o quanto você gasta com gasolina, revisão, seguro,
+                                        licenciamento entre outras tantas coisas que verá se realmente seus gastos não chegam aos 40% encontrados pela pesquisa.
+                                        <br>
+                                        <br>
+                                        E foi nesse cenário que nós do Sua vida mais fácil começamos a pensar em como hackear esse problema e daí surgiu uma
+                                        pergunta “É possível economizar dinheiro, gastar menos tempo e mesmo assim ter o nosso tão querido automóvel?”.
+                                        Com a pergunta em mão partimos em busca de métodos ou formas para economizar e vimos que sim, é possível!
+                                        <br>
+                                        <br>
+                                        Existem vários aplicativos no mercado que tem como objetivo fazer o usuário gastar menos tempo e dinheiro com seu
+                                        carro de uma forma fácil e na maioria das vezes de graça. É o caso do CARRORAMA, um aplicativo onde você consegue
+                                        controlar e otimizar os seus gastos com o seu querido amigo.
+                                        <br>
+                                        <br>
+                                        Encontramos uma matéria muito interessante no AUTOESPORTE onde eles analisaram o aplicativo em todos os quesitos e
+                                        mostraram quais são os pontos fortes e fracos dele, com certeza vale a pena dar uma lida.
+                                        <br>
+                                        <br>
+                                        Outra dica bem interessante é um e-book que fizemos com OS 5 MELHORES APLICATIVOS PARA GESTÃO DE GASTOS DO SEU CARRO,
+                                        baixe ele agora e veja quais são os apps que podem e vão facilitar em muito a sua vida no quesito carro.
+                                        <br>
+                                        <br>
+                                        Bom, espero que esse conteúdo tenha sido útil para você e nos vemos nas próximas matérias.
+                                        <br>
+                                        <br>
+                                        <a target="_blank" id="pdf-link" href="http://economia.estadao.com.br/noticias/geral,brasileiro-gasta-por-ano-40-do-valor-do-carro-com-manutencao-e-despesas,145264e">
+                                            ESTADÃO - Brasileiro gasta por ano 40% do valor do carro com manutenção e despesas
+                                        </a>
+                                        <br>
+                                        <br>
+                                        <a target="_blank" id="pdf-link" href="http://revistaautoesporte.globo.com/Noticias/noticia/2014/08/conheca-o-app-que-controla-gastos-e-manutencao-do-seu-carro.html">
+                                            AUTOESPORTE - Conheça o app que controla gastos e manutenção do seu carro
+                                        </a>
+                                        <br>
+                                        <br>
+                                    </p>
+                                </div>
+
+                                <div class="mdl-card__actions mdl-card--border">
+                                    <!-- Formulário de cadastro-->
+                                    <form id="form-footer" method="POST" action="como-economizar-tempo-e-dinheiro-com-seu-automovel.php">
+                                        <div align="center">
+                                            <div class="card-painel-post" >
+                                                <h4 class="titulo-card" data-toggle="collapse" data-target="#post1">
+                                                    Gostou?
+                                                </h4>
+                                                <h6 class="titulo-card" data-toggle="collapse" data-target="#post1">
+                                                    Preencha os campos abaixo e baixe agora mesmo um e-book grátis dos 5 melhores aplicativos para gestão de gastos do seu carro!
+                                                </h6>
+                                            </div>
+                                            <div class="card-painel-post" >
+                                                <form id="formCadastro" action="#">
+                                                    <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                                                        <input class="mdl-textfield__input" type="text" id="nome" name="nome" required>
+                                                        <label class="mdl-textfield__label" for="nome">Nome completo</label>
+                                                    </div>
+                                                    <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                                                        <input class="mdl-textfield__input" type="email" id="email" name="email" required>
+                                                        <label class="mdl-textfield__label" for="email">e-mail</label>
+                                                    </div>
+                                                    <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent button-footer">
+                                                        Quero meu e-book grátis
+                                                    </button>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                                <!-- Facebook - Like-->
+                                <div class="mdl-card__actions mdl-card--border" >
+                                    <div class="fb-like fb-like-post" data-href="https://www.facebook.com/suavidamaisfacil/" data-layout="button" data-action="like" data-size="large" data-show-faces="true" data-share="true" style="margin-top: 20px"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Facebook - Comentários -->
+                <div align="center" id="conteudo">
+                    <section id="post">
+                        <div class="col-auto button-footer facebook-div-comentario">
+                            <div class="fb-comments facebook-comentarios" data-href="http://www.suavidamaisfacil.com.br/post5/como-economizar-tempo-e-dinheiro-com-seu-automovel.html" data-mobile="true" data-width="100%" data-colorscheme="dark" data-numposts="10"></div>
+                        </div>
+                    </section>
+                </div>
+
+                <!-- Rodapé-->
+                <footer class="mdl-mini-footer">
+                    <div class="mdl-mini-footer__left-section">
+                        <div class="mdl-logo">Sua vida mais fácil</div>
+                        <ul class="mdl-mini-footer__link-list">
+                            <li><a href="https://www.facebook.com/suavidamaisfacil"> <img src="../img/facebook.svg" width="30" height="30" border="0" target="_blank" alt="" ></a></li>
+                            <li><a href="#"> <img src="../img/twitter.svg" width="30" height="30" border="0" alt="" ></a></li>
+                        </ul>
+                        <div class="mdl-layout-spacer"></div>
+                    </div>
+                </footer>
+
+            </div>
+        </main>
+    </div>
+
+</body>
+</html>

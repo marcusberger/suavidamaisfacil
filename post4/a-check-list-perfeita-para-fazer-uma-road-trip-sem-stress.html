@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="pt-br" xmlns:color="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="3 apps que vão mudar a sua vida para melhor">
+    <title>Sua vida mais fácil</title>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="shortcut icon" type="image/png" href="../img/favicon-32x32.png" sizes="32x32" />
+    <link rel="shortcut icon" type="image/png" href="../img/favicon-16x16.png" sizes="16x16" />
+    <link rel="stylesheet" href="../css/material.min.css" />
+    <link rel="stylesheet" href="../css/mycss.css">
+    <link rel="stylesheet" href="../css/modal.css">
+
+    <script src="../jquery/jquery.js"></script>
+    <script src="../mdl/material.min.js"></script>
+    <script src="../js/validacao.js"></script>
+
+    <!-- facebook commentários-->
+    <script>(function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = "//connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v2.10&appId=245558825499694";
+        fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+
+    <!-- facebook -->
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = "//connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v2.10";
+        fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+
+    <!--Analytics-->
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-106963166-1', 'auto');
+        ga('send', 'pageview');
+
+    </script>
+
+</head>
+
+<body>
+
+    <!-- App bar superior -->
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+        <header class="mdl-layout__header header-color">
+            <div class="mdl-layout__header-row header-color">
+                <!-- Espaço pra empurrar os links p/ a direita -->
+                <div class="mdl-layout-spacer"></div>
+                <!-- Itens do menu superior, para telas maiores -->
+                <nav class="mdl-navigation mdl-layout--large-screen-only">
+                    <a class="mdl-navigation__link" href="">Auto</a>
+                    <a class="mdl-navigation__link" href="">Pet</a>
+                    <a class="mdl-navigation__link" href="">Gadget</a>
+                    <a class="mdl-navigation__link" href="">Sua vida</a>
+                </nav>
+            </div>
+
+        </header>
+
+         <!--Menu hamburger-->
+        <div class="mdl-layout__drawer hamburger-menu">
+            <span class="mdl-layout-title">Menu</span>
+            <nav class="mdl-navigation ">
+                <a class="mdl-navigation__link" href="">Auto</a>
+                <a class="mdl-navigation__link" href="">Pet</a>
+                <a class="mdl-navigation__link" href="">Gadget</a>
+                <a class="mdl-navigation__link" href="">Sua vida</a>
+            </nav>
+        </div>
+
+        <!-- Container do layout -->
+        <main class="mdl-layout__content">
+            <div class="page-content">
+
+                <!-- Logo e nome-->
+                <div align="center">
+                    <div class="card-painel" >
+                        <a href="../index.html">
+                            <img src="../img/fav-icon.png" width="45" height="43" border="0"
+                                 alt="" >
+                            <img class="nome-logo" src="../img/nome.png" width="215" height="25" border="0"
+                                 alt="" style="margin-left: 10px">
+                        </a>
+                    </div>
+                </div>
+                <!-- Container dos grids -->
+                <div class="mdl-grid">
+                    <!-- Célula de grid da postagem -->
+                    <div class="mdl-cell mdl-cell--12-col ">
+
+                        <!-- Card da postagem -->
+                        <div align="center">
+                            <div class="mdl-card mdl-card-wide mdl-shadow--4dp mdl-grid-align">
+                                <div class="mdl-card__media center-crop-image">
+                                    <img src="../img/a-check-list-perfeita-para-fazer-uma-road-trip-sem-stress.jpg" style='height: 100%; width: 100%; object-fit: contain' border="0"
+                                         alt="" >
+                                </div>
+                                <div class="mdl-card__supporting-text" align="left" style="color: #212121">
+                                    <h4 class="titulo-card" data-toggle="collapse" data-target="#post1" >A check list perfeita para fazer uma road trip sem stress</h4>
+                                </div>
+                                <div class="mdl-card__supporting-text" align="left">
+                                    <p id="post-body" >
+                                        E aquele dia tão desejado ta chegando?
+                                        Você tem mesmo certeza que ta tudo certo?
+                                        Ainda não sabe do que eu estou falando, não é?
+                                        <br><br>
+                                        Eu to falando daquela ROAD TRIP que você tem sonhado há muito tempo.
+                                        E agora, meu amigo, ela vai sair do papel.
+                                        Aqui vão algumas dicas para você se planejar melhor.
+                                        <br><br>
+                                    <h5>#1 Escolha seu destino</h5>
+                                    Já que é uma Road Trip você precisa escolher um destino que você consiga chegar de carro. O importante aqui é que você saiba como é a estrada, rodovia, matagal. Você terá acesso a internet? Precisará de mapas? Dormirá no carro ou no hotel? Ou seja, todo tipo de informação relevante que você possa encontrar. Assim, você consegue adaptar o seu carro, alugar um outro, encontrar maneiras diferentes de chegar ao destino ou até mesmo mudar a direção da sua viagem.
+                                    <br><br>
+                                    <h5>#2 Decida se você quer viajar Sozinho ou Acompanhado</h5>
+                                    Viajar com amigos e família é sensacional, pois criamos laços mais fortes, vivemos momentos inesquecíveis, dividimos as despesas e claro, nos divertimos muito. Mas você já parou para pensar que viajando sozinho você pode viver tudo isso também? E de repente, se pensar em boas estratégias, pode até gastar o mesmo valor que gastaria se estivesse acompanhado.
+                                    Abaixo, você pode fazer o download da nossa planilha com estratégias para economizar quando viajar sozinho.
+                                    <br><br>
+                                    <h5>#3 Limpe seu carro antes e durante a viagem</h5>
+                                    Muita gente odeia limpar o carro, e eu me incluo nesse meio também, porém antes de iniciar sua trip é importante que você deixe tudo limpinho. Esse é o melhor jeito para que você consiga manter a ordem dentro do carro, pois o seu cerébro vai te condicionando a esse comportamento no dia a dia e a sujeira não vai acumulando durante o período de viagem. Além disso, a gente nunca sabe quando vai rolar a oportunidade de dar aquela carona. E aí, vai arriscar?
+                                    <br><br>
+                                    <h5>#4 Check list do seu veículo</h5>
+                                    Em até uma semana antes da sua viagem, é importante checar se está tudo ok com os pneus do carro, nível de óleo, nível de água, freios, se você tem cabo auxiliador de partida. Tudo que possa te causar problemas ou te deixar parado no meio do caminho. Aqui vale aquela máxima de que é melhor pecar pelo excesso do que pela falta, principalmente se você não entende de automóveis. Nesse caso, sugiro encontrar um mecânico de confiança.
+                                    No link abaixo temos uma check list para você fazer o download e te ajudar no planejamento.
+                                    <br><br>
+                                    <h5>#5 Saiba como se entreter</h5>
+                                    E se você se sentir entediado? O que fazer? Você pode botar aquela série em dia, voltar a treinar, começar a ler um bom livro, escutar as músicas de uma nova banda. A intenção é que você saiba aproveitar o seu tempo com qualidade, seja com a ajuda da Tecnologia, utilizando notebooks, tablets, celulares, escutando o bom e velho rádio ou tirando aquele cochilo gostoso, depois do almoço. Tudo tem o seu momento e o seu valor, saiba escolher.
+                                    <br><br>
+                                    <h5>#6 Planeje os gastos diários da viagem</h5>
+                                    Uma Road Trip pode durar uma semana, um mês ou até mesmo 1 ano. O que não falta é notícia de pessoas viajando ao redor do mundo, com aquelas fotos absurdas no instagram, em picos muito loucos. Elas nos inspiram e dão coragem, mas podem causar raiva também.
+                                    Vamo transformar essa raiva em planejamento?
+                                    Não esqueça de fazer o download da nossa planilha com os gastos básicos de uma Road Trip.
+                                    <br><br>
+                                    <h5>#7 Curta todos os momentos</h5>
+                                    Pode ser clichê falar isso, visto que a ideia de viajar, por si só, já é algo que iremos curtir. Mas, as vezes, nem tudo é como a gente planeja. Então, curta os momentos e saiba aproveitar aqueles em que você desejar ficar sozinho, estiver acompanhado, não quiser dirigir ou quiser dormir. Não sinta-se precionado a seguir o planejamento das atividades à risca e aprenda a negociar consigo mesmo.
+                                        <br>
+                                        <br>
+                                    </p>
+                                </div>
+
+                                <div class="mdl-card__actions mdl-card--border">
+                                    <!-- Formulário de cadastro-->
+                                    <form id="form-footer" method="POST" action="a-check-list-perfeita-para-fazer-uma-road-trip-sem-stress.php">
+                                        <div align="center">
+                                            <div class="card-painel-post" >
+                                                <h4 class="titulo-card" data-toggle="collapse" data-target="#post1">
+                                                    Gostou?
+                                                </h4>
+                                                <h6 class="titulo-card" data-toggle="collapse" data-target="#post1">
+                                                    Preencha os seguintes campos e baixe agora mesmo uma planilha com a check-list perfeita para fazer uma road trip sem stress!
+                                                </h6>
+                                            </div>
+                                            <div class="card-painel-post" >
+                                                <form id="formCadastro" action="#">
+                                                    <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                                                        <input class="mdl-textfield__input" type="text" id="nome" name="nome" required>
+                                                        <label class="mdl-textfield__label" for="nome">Nome completo</label>
+                                                    </div>
+                                                    <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                                                        <input class="mdl-textfield__input" type="email" id="email" name="email" required>
+                                                        <label class="mdl-textfield__label" for="email">e-mail</label>
+                                                    </div>
+                                                    <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent button-footer">
+                                                        Quero meu e-book grátis
+                                                    </button>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                                <!-- Facebook - Like-->
+                                <div class="mdl-card__actions mdl-card--border" >
+                                    <div class="fb-like fb-like-post" data-href="https://www.facebook.com/suavidamaisfacil/" data-layout="button" data-action="like" data-size="large" data-show-faces="true" data-share="true" style="margin-top: 20px"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Facebook - Comentários -->
+                <div align="center" id="conteudo">
+                    <section id="post">
+                        <div class="col-auto button-footer facebook-div-comentario">
+                            <div class="fb-comments facebook-comentarios" data-href="http://www.suavidamaisfacil.com.br/post4/a-check-list-perfeita-para-fazer-uma-road-trip-sem-stress.html" data-mobile="true" data-width="100%" data-colorscheme="dark" data-numposts="10"></div>
+                        </div>
+                    </section>
+                </div>
+
+                <!-- Rodapé-->
+                <footer class="mdl-mini-footer">
+                    <div class="mdl-mini-footer__left-section">
+                        <div class="mdl-logo">Sua vida mais fácil</div>
+                        <ul class="mdl-mini-footer__link-list">
+                            <li><a href="https://www.facebook.com/suavidamaisfacil"> <img src="../img/facebook.svg" width="30" height="30" border="0" target="_blank" alt="" ></a></li>
+                            <li><a href="#"> <img src="../img/twitter.svg" width="30" height="30" border="0" alt="" ></a></li>
+                        </ul>
+                        <div class="mdl-layout-spacer"></div>
+                    </div>
+                </footer>
+
+            </div>
+        </main>
+    </div>
+
+</body>
+</html>
