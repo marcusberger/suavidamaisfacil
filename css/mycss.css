@@ -67,6 +67,7 @@ a label {
 .button-footer {
     margin-top: 15px;
     margin-bottom: 15px;
+    margin-left: 15px;
 }
 
 .mdl-mini-footer {
@@ -87,10 +88,6 @@ a label {
     margin-top: 30px;
 }
 
-.button-footer {
-    margin-left: 15px;
-}
-
 .center-crop-image {
     background-position: center center;
     background-repeat: no-repeat;
@@ -109,4 +106,8 @@ a label {
     margin-bottom: auto;
     padding-bottom: 10px;
     padding-top: 10px;
+}
+
+.mdl-dialog {
+    width: 500px;
 }

@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="../css/mycss.css">
     <link rel="stylesheet" href="../css/modal.css">
 
-    <script src="../jquery/jquery.js"></script>
+    <script src="../jquery/jquery.min.js"></script>
     <script src="../mdl/material.min.js"></script>
     <script src="../js/validacao.js"></script>
 
@@ -87,7 +87,7 @@
                 <!-- Logo e nome-->
                 <div align="center">
                     <div class="card-painel" >
-                        <a href="../index.html">
+                        <a href="../index2.html">
                             <img src="../img/fav-icon.png" width="45" height="43" border="0"
                                  alt="" >
                             <img class="nome-logo" src="../img/nome.png" width="215" height="25" border="0"
@@ -128,7 +128,7 @@
 
                                 <div class="mdl-card__actions mdl-card--border">
                                     <!-- Formulário de cadastro-->
-                                    <form id="form-footer" method="POST" action="3-apps-que-vao-mudar-a-sua-vida-para-melhor.php">
+                                    <form id="formCadastro" method="POST" action="insert.php">
                                         <div align="center">
                                             <div class="card-painel-post" >
                                                 <h4 class="titulo-card" data-toggle="collapse" data-target="#post1">
@@ -139,20 +139,21 @@
                                                 </h6>
                                             </div>
                                             <div class="card-painel-post" >
-                                                <form id="formCadastro" action="#">
-                                                    <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                                                        <input class="mdl-textfield__input" type="text" id="nome" name="nome" required>
-                                                        <label class="mdl-textfield__label" for="nome">Nome completo</label>
-                                                    </div>
-                                                    <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                                                        <input class="mdl-textfield__input" type="email" id="email" name="email" required>
-                                                        <label class="mdl-textfield__label" for="email">e-mail</label>
-                                                    </div>
-                                                    <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent button-footer">
-                                                        Quero meu e-book grátis
-                                                    </button>
-                                                </form>
+                                            <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                                                <input class="mdl-textfield__input" type="text" id="nome" name="nome" required>
+                                                <label class="mdl-textfield__label" for="nome">Nome completo</label>
                                             </div>
+                                            <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                                                <input class="mdl-textfield__input" type="email" id="email" name="email" required>
+                                                <label class="mdl-textfield__label" for="email">e-mail</label>
+                                            </div>
+                                            <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent button-footer">
+                                                Quero meu e-book grátis
+                                            </button>
+                                            </div>
+                                            <!--hidden para inclusão no banco-->
+                                            <input type="hidden" id="nome-db" name="nome-db">
+                                            <input type="hidden" id="email-db" name="email-db">
                                         </div>
                                     </form>
                                 </div>
@@ -188,6 +189,7 @@
 
             </div>
         </main>
+
     </div>
 
 </body>
