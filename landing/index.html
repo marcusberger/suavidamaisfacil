@@ -1,18 +1,38 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-br" xmlns:color="http://www.w3.org/1999/xhtml">
 <head>
   <title>Sua vida mais fácil</title>
+
   <meta charset="utf-8">
-  <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
-  <link rel="stylesheet" type="text/css" href="css/lading.css">
-  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-  <script src="jquery/jquery.js"></script>
-  <script src="bootstrap/js/bootstrap.min.js"></script>
-  <script src="js/validacao.js"></script>
-  <script src="js/generico.js"></script>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Life-hacking dicas blog">
   <meta content="Sua vida mais fácil">
+
+  <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/lading.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <link rel="shortcut icon" type="image/png" href="../img/favicon-32x32.png" sizes="32x32" />
+  <link rel="shortcut icon" type="image/png" href="../img/favicon-16x16.png" sizes="16x16" />
+
+  <script src="jquery/jquery.js"></script>
+  <script src="bootstrap/js/bootstrap.min.js"></script>
+  <script src="js/index.js"></script>
+  <script src="../js/validacao.js"></script>
+
+  
+
+  <!--Analytics-->
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-106963166-1', 'auto');
+        ga('send', 'pageview');
+
+    </script>
+
 </head>
 
 <body >
@@ -46,7 +66,7 @@
 
     <div id="panel" class="panel panel-default">
       <div id="panel-heading" class="panel-heading"><p id="pForm">Preencha seu formulário, faça seu cálculo<br> e receba dicas de como economizar</p><p>É simples, divertido e super fácil</p></div>
-      <form method="POST" action="insert-footer.php">
+      <form id="formCadastro" method="POST" action="insert.php">
       <div class="panel-body">
         <input type="hidden" name="id_leads" value="" />
         <div class="form-row align-items-center">
@@ -63,16 +83,21 @@
             <span class="sr-only"></span> Favor informar nome completo válido.
           </div>
           <label for="inlineFormInputName">Nome Completo</label>
-          <input type="text" id="nome-footer" name="nome-footer"  class="form-control" placeholder="" />
+          <input type="text" id="nome-footer" name="nome-footer"  class="form-control" required>
           <br>
           <label for="inlineFormInputName">E-mail</label>
-          <input type="email" id="email-footer" name="email-footer" class="form-control" placeholder="" />
+          <input type="email" id="email-footer" name="email-footer" class="form-control" required>
           <div class="text-center">
             <br>
             <br>
+          
             <div class="col-auto button-footer">
               <button id="button" type="submit" class="btn btn-primary"><p id="pForm">QUERO RECEBER DICAS</p></button>
             </div>
+
+            <!--hidden para inclusão no banco-->
+            <input type="hidden" id="nome-db" name="nome-db">
+            <input type="hidden" id="email-db" name="email-db">
           </form>  
         </div>
 
