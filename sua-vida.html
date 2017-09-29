@@ -55,52 +55,11 @@
 
 <body>
 
-    <!-- Modal de cadastro -->
-    <div class="modal fade" id="modalCadastro" tabindex="-1" role="dialog" aria-labelledby="modalCadastro">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h4 class="modal-title" id="myModalLabel-2">Inscreva-se e receba conteúdos exlcusivos</h4>
-                </div>
-
-                <div class="modal-body">
-                    <p>Preencha os campos abaixo e faça o download do nosso e-book grátis com dicas surpreendentes</p>
-                    <div class="card-painel-post" >
-                        <form id="formCadastroModal" method="POST" action="insert-modal.php">
-                            <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                                <input class="mdl-textfield__input" type="text" id="nome-modal" name="nome"-modal required>
-                                <label class="mdl-textfield__label" for="nome-modal">Nome completo</label>
-                            </div>
-                            <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                                <input class="mdl-textfield__input" type="email" id="email-modal" name="email-modal" required>
-                                <label class="mdl-textfield__label" for="email-modal">e-mail</label>
-                            </div>
-                            <div class="modal-footer">
-                                <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent button-footer">
-                                    Quero meu e-book grátis
-                                </button>
-                                <button data-dismiss="modal" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect button-footer">
-                                    Cancelar
-                                </button>
-                            </div>
-                            <div class="form-group">
-                                <p class="pMensagemPrivacidade">Seus dados são confidenciais e estarão seguros conosco.<p>
-                            </div>
-                            <!--hidden para inclusão no banco-->
-                            <input type="hidden" id="nome-db-modal" name="nome-db-modal">
-                            <input type="hidden" id="email-db-modal" name="email-db-modal">
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
     <!-- App bar superior -->
     <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
         <header class="mdl-layout__header header-color">
             <div class="mdl-layout__header-row header-color">
-                <span class="mdl-layout-title">Home</span>
+                <span class="mdl-layout-title">Sua vida</span>
                 <!-- Espaço pra empurrar os links p/ a direita -->
                 <div class="mdl-layout-spacer"></div>
                 <!-- Itens do menu superior, para telas maiores -->
@@ -114,7 +73,7 @@
 
         </header>
 
-         <!--Menu hamburger-->
+        <!--Menu hamburger-->
         <div class="mdl-layout__drawer hamburger-menu">
             <span class="mdl-layout-title">Menu</span>
             <nav class="mdl-navigation ">
@@ -131,43 +90,17 @@
                 <!-- Logo e nome-->
                 <div align="center">
                     <div class="card-painel" >
-                        <img src="img/fav-icon.png" width="45" height="43" border="0"
-                             alt="" >
-                        <img class="nome-logo" src="img/nome.png" width="215" height="25" border="0"
-                             alt="" style="margin-left: 10px">
+                        <a href="index2.html">
+                            <img src="img/fav-icon.png" width="45" height="43" border="0"
+                                 alt="" >
+                            <img class="nome-logo" src="img/nome.png" width="215" height="25" border="0"
+                                 alt="" style="margin-left: 10px">
+                        </a>
                     </div>
                 </div>
 
                 <!-- Container dos grids -->
                 <div class="mdl-grid">
-
-                    <!-- Célula de grid da postagem #9 -->
-                    <div class="mdl-cell mdl-cell--4-col inner">
-                        <!-- Card da postagem #9 -->
-                        <div class="mdl-card mdl-card-home mdl-shadow--4dp mdl-grid-align">
-                            <a href="post9/comida-natural-vs-industrializada.html" >
-                                <div class="mdl-card__media">
-                                    <img src="img/comida-natural-vs-industrializada.jpg" style='height: 100%; width: 100%; object-fit: contain' border="0"
-                                         alt="" >
-                                </div>
-                                <div class="mdl-card__supporting-text" style="color: #212121">
-                                    <h5 class="titulo-card" data-toggle="collapse" data-target="#post1">Comida Natural vs. Industrializada, qual é melhor para o seu cão?</h5>
-                                </div>
-                                <div class="mdl-card__supporting-text">
-                                    <p class="texto-card" id="post-body" >
-                                        Parece que hoje está na moda a alimentação natural para cães, muitos donos se
-                                        preocupam com a qualidade alimentar de seus cães, o que gera muita duvida no
-                                        quesito qual tipo de dieta é mais recomendada...
-                                    </p>
-                                </div>
-                                <div class="mdl-card__actions mdl-card--border">
-                                    <a href="post9/comida-natural-vs-industrializada.html" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
-                                        Saiba mais
-                                    </a>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
 
                     <!-- Célula de grid da postagem #8 -->
                     <div class="mdl-cell mdl-cell--4-col inner">
@@ -216,33 +149,6 @@
                                 </div>
                                 <div class="mdl-card__actions mdl-card--border">
                                     <a href="post1/3-apps-que-vao-mudar-a-sua-vida-para-melhor.html" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
-                                        Saiba mais
-                                    </a>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-
-                    <!-- Célula de grid da postagem #6 -->
-                    <div class="mdl-cell mdl-cell--4-col inner">
-                        <!-- Card da postagem #6 -->
-                        <div class="mdl-card mdl-card-home mdl-shadow--4dp mdl-grid-align">
-                            <a href="post6/descubra-o-seu-perfil-de-dono-de-cao.html">
-                                <div class="mdl-card__media">
-                                    <img src="img/descubra-o-seu-perfil-de-dono-de-cao.jpg" style='height: 100%; width: 100%; object-fit: contain' border="0"
-                                         alt="" >
-                                </div>
-
-                                <div class="mdl-card__supporting-text" style="color: #212121">
-                                    <h5 class="titulo-card" data-toggle="collapse" data-target="#post1">Quiz - Descubra o seu perfil de dono de cão</h5>
-                                </div>
-                                <div class="mdl-card__supporting-text">
-                                    <p class="texto-card" id="post-body" >Em algum momento, nós vamos pensar sobre a personalidade ou as características que o nosso pet tem,
-                                        seja ele bagunceiro, teimoso, chato, brincalhão ou preguiçoso. Além disso...
-                                    </p>
-                                </div>
-                                <div class="mdl-card__actions mdl-card--border">
-                                    <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
                                         Saiba mais
                                     </a>
                                 </div>
@@ -307,62 +213,6 @@
                         </div>
                     </div>
 
-                    <!-- Célula de grid da postagem #3 -->
-                    <div class="mdl-cell mdl-cell--4-col">
-                        <!-- Card da postagem #3 -->
-                        <div class="mdl-card mdl-card-home mdl-shadow--4dp mdl-grid-align">
-                            <a href="post3/25-bares-e-restaurantes-pet-friendly.html">
-                                <div class="mdl-card__media">
-                                    <img src="img/25-lugares-pet-friendly.jpg" style='height: 100%; width: 100%; object-fit: contain' border="0"
-                                         alt="" >
-                                </div>
-
-                                <div class="mdl-card__supporting-text" style="color: #212121">
-                                    <h5 class="titulo-card" data-toggle="collapse" data-target="#post1">25 bares e restaurantes pet friendly</h5>
-                                </div>
-                                <div class="mdl-card__supporting-text">
-                                    <p class="texto-card" id="post-body" >Cachorros têm apenas um defeito: vivem pouco. Vamos aproveitar ao máximo esse tempo e ficar grudado neles!
-                                        E que atire o primeiro biscrok quem tem um bichinho e nunca ficou com o coração na mão ao ver a carinha
-                                        de triste quando...
-                                    </p>
-                                </div>
-                                <div class="mdl-card__actions mdl-card--border">
-                                    <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
-                                        Saiba mais
-                                    </a>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-
-                    <!-- Célula de grid da postagem #2 -->
-                    <div class="mdl-cell mdl-cell--4-col">
-                        <!-- Card da postagem #2 -->
-                        <div class="mdl-card mdl-card-home mdl-shadow--4dp mdl-grid-align">
-                            <a href="post2/15-mitos-e-verdades-sobre-a-bateria-do-seu-celular.html">
-                                <div class="mdl-card__media">
-                                    <img src="img/15-mitos-e-verdades-sobre-a-bateria-do-seu-celular.jpeg" style='height: 100%; width: 100%; object-fit: contain' border="0"
-                                         alt="" >
-                                </div>
-
-                                <div class="mdl-card__supporting-text" style="color: #212121">
-                                    <h5 class="titulo-card" data-toggle="collapse" data-target="#post1">15 verdades e mitos sobre a bateria do seu celular</h5>
-                                </div>
-                                <div class="mdl-card__supporting-text">
-                                    <p class="texto-card" id="post-body" >Hoje em dia a maioria das pessoas são companheiras inseparáveis de seus celulares,
-                                        mas você sabe tudo mesmo sobre seu fiel companheiro?
-                                        Claro que nem todo mundo sabe que todas as...
-                                    </p>
-                                </div>
-                                <div class="mdl-card__actions mdl-card--border">
-                                    <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
-                                        Saiba mais
-                                    </a>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-
                     <!-- Célula de grid da postagem #1 -->
                     <div class="mdl-cell mdl-cell--4-col">
                         <!-- Card da postagem #1 -->
@@ -404,19 +254,22 @@
                     <div class="card-painel" >
                         <form id="formCadastro" method="POST" action="insert.php">
                             <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                                <input class="mdl-textfield__input" type="text" id="nome" name="nome" required>
-                                <label class="mdl-textfield__label" for="nome">Nome completo</label>
+                                <input class="mdl-textfield__input" type="text" id="nome-footer" name="nome-footer" required>
+                                <label class="mdl-textfield__label" for="nome-footer">Nome completo</label>
                             </div>
                             <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                                <input class="mdl-textfield__input" type="email" id="email" name="email" required>
-                                <label class="mdl-textfield__label" for="email">e-mail</label>
+                                <input class="mdl-textfield__input" type="email" id="email-footer" name="email-footer" required>
+                                <label class="mdl-textfield__label" for="email-footer">e-mail</label>
                             </div>
-                            <button id="button-download" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent button-footer">
+                            <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent button-footer">
                                 Quero meu e-book grátis
                             </button>
+                            <div class="form-group">
+                                <p class="pMensagemPrivacidade">Seus dados são confidenciais e estarão seguros conosco.<p>
+                            </div>
                             <!--hidden para inclusão no banco-->
-                            <input type="hidden" id="nome-db" name="nome-db">
-                            <input type="hidden" id="email-db" name="email-db">
+                            <input type="hidden" id="nome-db-modal" name="nome-db-modal">
+                            <input type="hidden" id="email-db-modal" name="email-db-modal">
                         </form>
                     </div>
                 </div>
@@ -444,6 +297,11 @@
             </div>
         </main>
 
+        <!--hidden para inclusão no banco-->
+        <div>
+            <input type="text" id="nome-db" name="nome-db" required>
+            <input type="email" id="email-db" name="email-db" required>
+        </div>
     </div>
 
 </body>

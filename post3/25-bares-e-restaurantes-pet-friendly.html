@@ -60,23 +60,23 @@
                 <div class="mdl-layout-spacer"></div>
                 <!-- Itens do menu superior, para telas maiores -->
                 <nav class="mdl-navigation mdl-layout--large-screen-only">
-                    <a class="mdl-navigation__link" href="">Auto</a>
-                    <a class="mdl-navigation__link" href="">Pet</a>
-                    <a class="mdl-navigation__link" href="">Gadget</a>
-                    <a class="mdl-navigation__link" href="">Sua vida</a>
+                    <a class="mdl-navigation__link" href="../auto.html">Auto</a>
+                    <a class="mdl-navigation__link" href="../pet.html">Pet</a>
+                    <a class="mdl-navigation__link" href="../gadget.html">Gadget</a>
+                    <a class="mdl-navigation__link" href="../sua-vida.html">Sua vida</a>
                 </nav>
             </div>
 
         </header>
 
-         <!--Menu hamburger-->
+        <!--Menu hamburger-->
         <div class="mdl-layout__drawer hamburger-menu">
             <span class="mdl-layout-title">Menu</span>
             <nav class="mdl-navigation ">
-                <a class="mdl-navigation__link" href="">Auto</a>
-                <a class="mdl-navigation__link" href="">Pet</a>
-                <a class="mdl-navigation__link" href="">Gadget</a>
-                <a class="mdl-navigation__link" href="">Sua vida</a>
+                <a class="mdl-navigation__link" href="../auto.html">Auto</a>
+                <a class="mdl-navigation__link" href="../pet.html">Pet</a>
+                <a class="mdl-navigation__link" href="../gadget.html">Gadget</a>
+                <a class="mdl-navigation__link" href="../sua-vida.html">Sua vida</a>
             </nav>
         </div>
 
@@ -126,7 +126,7 @@
 
                                 <div class="mdl-card__actions mdl-card--border">
                                     <!-- Formulário de cadastro-->
-                                    <form id="form-footer" method="POST" action="25-bares-e-restaurantes-pet-friendly.php">
+                                    <form id="formCadastro" method="POST" action="insert.php">
                                         <div align="center">
                                             <div class="card-painel-post" >
                                                 <h4 class="titulo-card" data-toggle="collapse" data-target="#post1">
@@ -137,20 +137,24 @@
                                                 </h6>
                                             </div>
                                             <div class="card-painel-post" >
-                                                <form id="formCadastro" action="#">
-                                                    <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                                                        <input class="mdl-textfield__input" type="text" id="nome" name="nome" required>
-                                                        <label class="mdl-textfield__label" for="nome">Nome completo</label>
-                                                    </div>
-                                                    <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                                                        <input class="mdl-textfield__input" type="email" id="email" name="email" required>
-                                                        <label class="mdl-textfield__label" for="email">e-mail</label>
-                                                    </div>
-                                                    <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent button-footer">
-                                                        Quero meu e-book grátis
-                                                    </button>
-                                                </form>
+                                            <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                                                <input class="mdl-textfield__input" type="text" id="nome" name="nome" required>
+                                                <label class="mdl-textfield__label" for="nome">Nome completo</label>
                                             </div>
+                                            <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                                                <input class="mdl-textfield__input" type="email" id="email" name="email" required>
+                                                <label class="mdl-textfield__label" for="email">e-mail</label>
+                                            </div>
+                                            <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent button-footer">
+                                                Quero meu e-book grátis
+                                            </button>
+                                            </div>
+                                            <div class="form-group">
+                                                <p class="pMensagemPrivacidade">Seus dados são confidenciais e estarão seguros conosco.<p>
+                                            </div>
+                                            <!--hidden para inclusão no banco-->
+                                            <input type="hidden" id="nome-db" name="nome-db">
+                                            <input type="hidden" id="email-db" name="email-db">
                                         </div>
                                     </form>
                                 </div>

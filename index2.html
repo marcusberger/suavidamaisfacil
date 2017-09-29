@@ -55,47 +55,6 @@
 
 <body>
 
-    <!-- Modal de cadastro -->
-    <div class="modal fade" id="modalCadastro" tabindex="-1" role="dialog" aria-labelledby="modalCadastro">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h4 class="modal-title" id="myModalLabel-2">Inscreva-se e receba conteúdos exlcusivos</h4>
-                </div>
-
-                <div class="modal-body">
-                    <p>Preencha os campos abaixo e faça o download do nosso e-book grátis com dicas surpreendentes</p>
-                    <div class="card-painel-post" >
-                        <form id="formCadastroModal" method="POST" action="insert-modal.php">
-                            <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                                <input class="mdl-textfield__input" type="text" id="nome-modal" name="nome"-modal required>
-                                <label class="mdl-textfield__label" for="nome-modal">Nome completo</label>
-                            </div>
-                            <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                                <input class="mdl-textfield__input" type="email" id="email-modal" name="email-modal" required>
-                                <label class="mdl-textfield__label" for="email-modal">e-mail</label>
-                            </div>
-                            <div class="modal-footer">
-                                <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent button-footer">
-                                    Quero meu e-book grátis
-                                </button>
-                                <button data-dismiss="modal" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect button-footer">
-                                    Cancelar
-                                </button>
-                            </div>
-                            <div class="form-group">
-                                <p class="pMensagemPrivacidade">Seus dados são confidenciais e estarão seguros conosco.<p>
-                            </div>
-                            <!--hidden para inclusão no banco-->
-                            <input type="hidden" id="nome-db-modal" name="nome-db-modal">
-                            <input type="hidden" id="email-db-modal" name="email-db-modal">
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
     <!-- App bar superior -->
     <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
         <header class="mdl-layout__header header-color">
@@ -114,7 +73,7 @@
 
         </header>
 
-         <!--Menu hamburger-->
+        <!--Menu hamburger-->
         <div class="mdl-layout__drawer hamburger-menu">
             <span class="mdl-layout-title">Menu</span>
             <nav class="mdl-navigation ">
@@ -404,19 +363,22 @@
                     <div class="card-painel" >
                         <form id="formCadastro" method="POST" action="insert.php">
                             <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                                <input class="mdl-textfield__input" type="text" id="nome" name="nome" required>
-                                <label class="mdl-textfield__label" for="nome">Nome completo</label>
+                                <input class="mdl-textfield__input" type="text" id="nome-footer" name="nome-footer" required>
+                                <label class="mdl-textfield__label" for="nome-footer">Nome completo</label>
                             </div>
                             <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                                <input class="mdl-textfield__input" type="email" id="email" name="email" required>
-                                <label class="mdl-textfield__label" for="email">e-mail</label>
+                                <input class="mdl-textfield__input" type="email" id="email-footer" name="email-footer" required>
+                                <label class="mdl-textfield__label" for="email-footer">e-mail</label>
                             </div>
-                            <button id="button-download" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent button-footer">
+                            <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent button-footer">
                                 Quero meu e-book grátis
                             </button>
+                            <div class="form-group">
+                                <p class="pMensagemPrivacidade">Seus dados são confidenciais e estarão seguros conosco.<p>
+                            </div>
                             <!--hidden para inclusão no banco-->
-                            <input type="hidden" id="nome-db" name="nome-db">
-                            <input type="hidden" id="email-db" name="email-db">
+                            <input type="hidden" id="nome-db-modal" name="nome-db-modal">
+                            <input type="hidden" id="email-db-modal" name="email-db-modal">
                         </form>
                     </div>
                 </div>
@@ -444,6 +406,11 @@
             </div>
         </main>
 
+        <!--hidden para inclusão no banco-->
+        <div>
+            <input type="text" id="nome-db" name="nome-db" required>
+            <input type="email" id="email-db" name="email-db" required>
+        </div>
     </div>
 
 </body>

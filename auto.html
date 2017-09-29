@@ -1,0 +1,230 @@
+<?php ?>
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Life-hacking dicas blog">
+    <title>Sua vida mais fácil</title>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="shortcut icon" type="image/png" href="img/favicon-32x32.png" sizes="32x32" />
+    <link rel="shortcut icon" type="image/png" href="img/favicon-16x16.png" sizes="16x16" />
+    <link rel="stylesheet" href="css/material.min.css" />
+    <link rel="stylesheet" href="css/mycss.css">
+    <link rel='stylesheet prefetch' href='http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css'>
+
+    <script src="jquery/jquery.min.js"></script>
+    <script src="mdl/material.min.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/validacao.js"></script>
+    <script src='http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js'></script>
+
+    <!-- facebook commentários-->
+    <script>(function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = "//connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v2.10&appId=245558825499694";
+        fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+
+    <!-- facebook -->
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = "//connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v2.10";
+        fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+
+    <!--Analytics-->
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-106963166-1', 'auto');
+        ga('send', 'pageview');
+
+    </script>
+
+</head>
+
+<body>
+
+    <!-- App bar superior -->
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+        <header class="mdl-layout__header header-color">
+            <div class="mdl-layout__header-row header-color">
+                <span class="mdl-layout-title">Auto</span>
+                <!-- Espaço pra empurrar os links p/ a direita -->
+                <div class="mdl-layout-spacer"></div>
+                <!-- Itens do menu superior, para telas maiores -->
+                <nav class="mdl-navigation mdl-layout--large-screen-only">
+                    <a class="mdl-navigation__link" href="auto.html">Auto</a>
+                    <a class="mdl-navigation__link" href="pet.html">Pet</a>
+                    <a class="mdl-navigation__link" href="gadget.html">Gadget</a>
+                    <a class="mdl-navigation__link" href="sua-vida.html">Sua vida</a>
+                </nav>
+            </div>
+
+        </header>
+
+        <!--Menu hamburger-->
+        <div class="mdl-layout__drawer hamburger-menu">
+            <span class="mdl-layout-title">Menu</span>
+            <nav class="mdl-navigation ">
+                <a class="mdl-navigation__link" href="auto.html">Auto</a>
+                <a class="mdl-navigation__link" href="pet.html">Pet</a>
+                <a class="mdl-navigation__link" href="gadget.html">Gadget</a>
+                <a class="mdl-navigation__link" href="sua-vida.html">Sua vida</a>
+            </nav>
+        </div>
+
+        <!-- Container do layout -->
+        <main class="mdl-layout__content">
+            <div class="page-content">
+                <!-- Logo e nome-->
+                <div align="center">
+                    <div class="card-painel" >
+                        <a href="index2.html">
+                            <img src="img/fav-icon.png" width="45" height="43" border="0"
+                                 alt="" >
+                            <img class="nome-logo" src="img/nome.png" width="215" height="25" border="0"
+                                 alt="" style="margin-left: 10px">
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Container dos grids -->
+                <div class="mdl-grid">
+
+
+                    <!-- Célula de grid da postagem #5 -->
+                    <div class="mdl-cell mdl-cell--4-col inner">
+                        <!-- Card da postagem #5 -->
+                        <div class="mdl-card mdl-card-home mdl-shadow--4dp mdl-grid-align">
+                            <a href="post5/como-economizar-tempo-e-dinheiro-com-seu-automovel.html">
+                                <div class="mdl-card__media">
+                                    <img src="img/como-economizar-tempo-e-dinheiro-com-seu-automovel.jpeg" style='height: 100%; width: 100%; object-fit: contain' border="0"
+                                         alt="" >
+                                </div>
+
+                                <div class="mdl-card__supporting-text" style="color: #212121">
+                                    <h5 class="titulo-card" data-toggle="collapse" data-target="#post1">Como economizar tempo e dinheiro com o seu automovel</h5>
+                                </div>
+                                <div class="mdl-card__supporting-text">
+                                    <p class="texto-card" id="post-body" > Os tempos estão mudando e muita coisa que antes era fato, hoje não passa de uma simples lembrança,
+                                        isso é um fato! Mas uma coisa que sem dúvida ainda é verdade, é que o brasileiro não deixou de ser apaixonado por carro!
+                                        Segundo o IBGE...
+                                    </p>
+                                </div>
+                                <div class="mdl-card__actions mdl-card--border">
+                                    <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+                                        Saiba mais
+                                    </a>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Célula de grid da postagem #4 -->
+                    <div class="mdl-cell mdl-cell--4-col">
+                        <!-- Card da postagem #4 -->
+                        <div class="mdl-card mdl-card-home mdl-shadow--4dp mdl-grid-align">
+                            <a href="post4/a-check-list-perfeita-para-fazer-uma-road-trip-sem-stress.html">
+                                <div class="mdl-card__media">
+                                    <img src="img/a-check-list-perfeita-para-fazer-uma-road-trip-sem-stress.jpg" style='height: 100%; width: 100%; object-fit: contain' border="0"
+                                         alt="" >
+                                </div>
+
+                                <div class="mdl-card__supporting-text" style="color: #212121">
+                                    <h5 class="titulo-card" data-toggle="collapse" data-target="#post1">A check-list perfeita para fazer uma road trip sem stress</h5>
+                                </div>
+                                <div class="mdl-card__supporting-text">
+                                    <p class="texto-card" id="post-body" >E aquele dia tão desejado ta chegando? Você tem mesmo certeza que ta tudo certo?
+                                        Ainda não sabe do que eu estou falando, não é?
+                                        Eu to falando daquela ROAD TRIP que você tem sonhado há muito tempo. E agora, meu amigo, ela vai sair do papel.
+                                        Aqui vão algumas dicas para você se planejar melhor.
+                                    </p>
+                                </div>
+                                <div class="mdl-card__actions mdl-card--border">
+                                    <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+                                        Saiba mais
+                                    </a>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- Final do grid -->
+
+                <!-- Formulário de cadastro-->
+                <div align="center">
+                    <div class="card-painel" >
+                        <h4 class="titulo-card" data-toggle="collapse" data-target="#post1">
+                            Facilite ainda mais a sua vida!
+                        </h4>
+                        <h6 class="titulo-card" data-toggle="collapse" data-target="#post1">
+                            Baixe o nosso e-book grátis com dicas surpreendentes
+                        </h6>
+                    </div>
+                    <div class="card-painel" >
+                        <form id="formCadastro" method="POST" action="insert.php">
+                            <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                                <input class="mdl-textfield__input" type="text" id="nome-footer" name="nome-footer" required>
+                                <label class="mdl-textfield__label" for="nome-footer">Nome completo</label>
+                            </div>
+                            <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                                <input class="mdl-textfield__input" type="email" id="email-footer" name="email-footer" required>
+                                <label class="mdl-textfield__label" for="email-footer">e-mail</label>
+                            </div>
+                            <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent button-footer">
+                                Quero meu e-book grátis
+                            </button>
+                            <div class="form-group">
+                                <p class="pMensagemPrivacidade">Seus dados são confidenciais e estarão seguros conosco.<p>
+                            </div>
+                            <!--hidden para inclusão no banco-->
+                            <input type="hidden" id="nome-db-modal" name="nome-db-modal">
+                            <input type="hidden" id="email-db-modal" name="email-db-modal">
+                        </form>
+                    </div>
+                </div>
+
+                <!-- Facebook - Comentários -->
+                <div align="center" id="conteudo">
+                    <section id="post">
+                        <div class="col-auto button-footer facebook-div-comentario">
+                            <div class="fb-comments facebook-comentarios" data-href="http://www.suavidamaisfacil.com.br/index.php" data-mobile="true" data-width="100%" data-colorscheme="dark" data-numposts="10"></div>
+                        </div>
+                    </section>
+                </div>
+
+                <!-- Rodapé-->
+                <footer class="mdl-mini-footer">
+                    <div class="mdl-mini-footer__left-section">
+                        <div class="mdl-logo">Sua vida mais fácil</div>
+                        <ul class="mdl-mini-footer__link-list">
+                            <li><a target="_blank" href="https://www.facebook.com/suavidamaisfacil"> <img src="img/facebook.svg" width="30" height="30" border="0" alt="" ></a></li>
+                        </ul>
+                        <div class="mdl-layout-spacer"></div>
+                    </div>
+                </footer>
+
+            </div>
+        </main>
+
+        <!--hidden para inclusão no banco-->
+        <div>
+            <input type="text" id="nome-db" name="nome-db" required>
+            <input type="email" id="email-db" name="email-db" required>
+        </div>
+    </div>
+
+</body>
+</html>
